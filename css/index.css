@@ -1,6 +1,6 @@
 #gradsky {
 	background-color: aqua;
-	background-image: linear-gradient(to bottom, #0057e3, #80eaff, #80ffa0, #62ff54, #00ff0d, #00ff00);
+	background-image: linear-gradient(to bottom, #0000ff, #00ffff, #00ff00);
 }
 
 h1 {
@@ -12,15 +12,19 @@ h1 {
 	-webkit-text-stroke-color: white;
 }
 
+p {
+	font-size: 30px;
+}
+
 a:link, a:visited {
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  outline: 5px solid green;
+  outline: 5px solid white;
 }
 
 a:hover, a:active {
-  background-color: lime;
+  background-color: aqua;
 }
