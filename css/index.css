@@ -3,6 +3,12 @@
 	background-image: linear-gradient(to bottom, #0000ff, #00ffff, #00ff00);
 }
 
+#end {
+	background-color: black;
+	padding: 20px;
+	color: white;
+}
+
 h1 {
 	font-size: 100px;
 	background: -webkit-linear-gradient(left, green, lime, aqua, blue);
