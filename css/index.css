@@ -18,6 +18,13 @@ h1 {
 	-webkit-text-stroke-color: white;
 }
 
+h3 {
+	font-size: 80px;
+	color: #00ffff;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #000000;
+}
+
 p {
 	font-size: 30px;
 }

@@ -1,2 +1,2 @@
 # First-Git-pages
-This is first website I make on github
+This is first website I make
