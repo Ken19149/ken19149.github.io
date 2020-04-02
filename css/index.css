@@ -41,3 +41,19 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: aqua;
 }
+
+img {
+	outline: 5px solid black;
+}
+
+video {
+	outline: 5px solid black;
+}
+
+body {
+	margin: 0;
+}
+
+iframe {
+	outline: 5px solid black;
+}
