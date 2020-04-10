@@ -25,6 +25,10 @@ h3 {
 	-webkit-text-stroke-color: #000000;
 }
 
+h5 {
+	font-size: 60px;
+}
+
 p {
 	font-size: 30px;
 }
