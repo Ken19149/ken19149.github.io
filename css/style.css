@@ -329,23 +329,8 @@ body {
 
 /* Typing Effects */
 /* Add your CSS styles here */
-.typing-container {
-  text-align: center;
-  padding: 50px;
-}
-
-h1 {
+.typewrite {
   color: #fff;
-  font-size: 24px;
-  font-family: Arial, sans-serif;
-}
-
-/* Blinking cursor animation */
-@keyframes cursor-blink {
-  0%, 100% {
-      border-right: 2px solid transparent;
-  }
-  50% {
-      border-right: 2px solid #000;
-  }
+  font-family: 'VT323', monospace;
+  font-size: 100px;
 }

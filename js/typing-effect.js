@@ -1,31 +1,56 @@
-const textToType = ["Welcome to my portfolio!", "This is a typing effect example."];
-const initialDelay = 2000; // 2 seconds delay before typing the first text
-const typingSpeed = 100;
-const deleteSpeed = 50;
-const transitionDelayTyping = 2000; // 2 seconds delay after typing a text
-const transitionDelayDeleting = 1000; // 1 second delay after deleting a text
-const typedTextElement = document.getElementById('typed-text');
-let textIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
 
-function typeText() {
-    const text = textToType[textIndex];
-    if (!isDeleting && charIndex < text.length) {
-        typedTextElement.textContent += text.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeText, typingSpeed);
-    } else if (isDeleting && charIndex >= 0) {
-        typedTextElement.textContent = text.substring(0, charIndex);
-        charIndex--;
-        setTimeout(typeText, deleteSpeed);
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
-        isDeleting = !isDeleting;
-        textIndex = (textIndex + 1) % textToType.length;
-        const delay = isDeleting ? transitionDelayDeleting : transitionDelayTyping;
-        setTimeout(typeText, delay); // Add delay before typing or deleting the next text
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
-}
 
-// Start typing after the initial delay
-setTimeout(typeText, initialDelay);
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
+
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+};
