@@ -15,7 +15,7 @@ body {
   justify-content: center;
   opacity: 1;
   z-index: 9999;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .loading-screen.fade-out {
@@ -326,3 +326,26 @@ body {
 @keyframes fade { 0% { opacity: 1;} 50% { opacity: 0.25;}}
 
 @keyframes fade-in { 0% { opacity: 0;} 100% { opacity: 1;}}
+
+/* Typing Effects */
+/* Add your CSS styles here */
+.typing-container {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+/* Blinking cursor animation */
+@keyframes cursor-blink {
+  0%, 100% {
+      border-right: 2px solid transparent;
+  }
+  50% {
+      border-right: 2px solid #000;
+  }
+}

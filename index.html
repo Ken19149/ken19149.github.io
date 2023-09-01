@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Your Website</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div class="loading-screen">
         <div id="particles-background" class="vertical-centered-box"></div>
         <div id="particles-foreground" class="vertical-centered-box"></div>
-        <script src="animation.js"></script>
+        <script src="js/animation.js"></script>
         <div class="vertical-centered-box">
         <div class="content">
             <div class="loader-circle"></div>
@@ -31,11 +31,23 @@
           document.querySelector('.loading-screen').classList.add('fade-out');
         }, 1500);
     </script>
-    <a href="../ver1/" style="color: #fff;">content</a>
-    <!-- Content (your website's content goes here) -->
-    <div class="content">
-        <!-- Your website content -->
-        <p style="color: #fff;">test</p>
+
+    <!--Content Below-->
+    <nav>
+        <div class="logo">
+            <a href="#">Your Logo</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="typing-container">
+        <h1>Typing Effect Example: <span id="typed-text"></span></h1>
     </div>
+    <script src="js/typing-effect.js"></script>
 </body>
 </html>
