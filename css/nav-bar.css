@@ -22,16 +22,16 @@ section {
   height: 100vh; }
 
 #home {
-  background-color: #320b75; }
+  background-color: #212a3c;}
 
 #about {
-  background-color: #38409c; }
+  background-color: #2e3a52; }
 
 #work {
-  background-color: #320b75; }
+  background-color: #3c4b6a; }
 
 #contact {
-  background-color: #38409c; }
+  background-color: #4a5c81; }
 
 /*-------------Helpers-------------*/
 .skew {
@@ -90,7 +90,8 @@ h1.logo {
   font-weight: 300;
   font-size: 1.75em;
   line-height: 0.75em;
-  color: #fff; }
+  color: #fff; 
+}
 
 h1.logo a, a:active, a:hover, a:visited {
   text-decoration: none;
@@ -158,4 +159,14 @@ a:hover {
   20% {
     padding-right: 0em; }
   100% {
-    padding-right: 5em; } }
+    padding-right: 5em; }
+}
+
+/* Add border to text
+main h1 {
+  text-shadow: -5px 5px 0 #5871ff,
+                5px 5px 0 #5871ff,
+                5px -5px 0 #5871ff,
+                -5px -5px 0 #5871ff;
+}
+*/
