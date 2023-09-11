@@ -1,8 +1,8 @@
-$color-primary: #f857a8;
-$color-secondary: #ff5858;
+$color-primary: #57dbf8;
+$color-secondary: #5871ff;
 $color-neutral-lt: #fff;
-$color-neutral-med: #ddd;
-$color-neutral-dk: #444;
+$color-neutral-med: #424146;
+$color-neutral-dk: #262627;
 $a-tags: "a, a:active, a:hover, a:visited";
 $a-tags-no-hov: "a:link, a:visited, a:active";
 $headings-font: "Saira Semi Condensed", sans-serif;
@@ -56,19 +56,19 @@ section {
 }
 
 #home {
-  background-color: #ddd;
+  background-color: #320b75;
 }
 
 #about {
-  background-color: #aaa;
+  background-color: #38409c;
 }
 
 #work {
-  background-color: #888;
+  background-color: #320b75;
 }
 
 #contact {
-  background-color: #666;
+  background-color: #38409c;
 }
 
 /*-------------Helpers-------------*/

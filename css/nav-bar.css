@@ -22,16 +22,16 @@ section {
   height: 100vh; }
 
 #home {
-  background-color: #ddd; }
+  background-color: #320b75; }
 
 #about {
-  background-color: #aaa; }
+  background-color: #38409c; }
 
 #work {
-  background-color: #888; }
+  background-color: #320b75; }
 
 #contact {
-  background-color: #666; }
+  background-color: #38409c; }
 
 /*-------------Helpers-------------*/
 .skew {
@@ -73,9 +73,9 @@ section {
   padding: 0 1em; }
 
 span.gradient {
-  background: #f857a8;
-  background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
-  background: linear-gradient(45deg, #f857a8, #ff5858);
+  background: #57dbf8;
+  background: -webkit-linear-gradient(45deg, #57dbf8, #5871ff);
+  background: linear-gradient(45deg, #57dbf8, #5871ff);
   padding: 0 1em;
   position: relative;
   right: 1em;
@@ -99,11 +99,11 @@ h1.logo a, a:active, a:hover, a:visited {
 .nav-link {
   text-transform: uppercase;
   text-align: center;
-  border-top: 0.5px solid #ddd; }
+  border-top: 0.5px solid #424146; }
 
 a:link, a:visited, a:active {
   text-decoration: none;
-  color: #f857a8; }
+  color: #57dbf8; }
 
 a:hover {
   text-decoration: underline; }
@@ -114,7 +114,7 @@ a:hover {
   height: 100%; }
 
 .btn-nav {
-  color: #f857a8;
+  color: #57dbf8;
   padding-left: 2em;
   padding-right: 2em; }
 
@@ -136,9 +136,9 @@ a:hover {
   .btn-nav {
     display: none; }
   .nav a:link.active, a:visited.active, a:active.active {
-    background: #f857a8;
-    background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
-    background: linear-gradient(45deg, #f857a8, #ff5858);
+    background: #57dbf8;
+    background: -webkit-linear-gradient(45deg, #57dbf8, #5871ff);
+    background: linear-gradient(45deg, #57dbf8, #5871ff);
     color: #fff; }
   .nav-link-span {
     transform: skew(20deg);
@@ -150,8 +150,8 @@ a:hover {
     .nav-link:last-child {
       padding-right: 3em; }
   a:hover.nav-link:not(.active) {
-    color: #444;
-    background: #ddd;
+    color: #262627;
+    background: #424146;
     background: linear-gradient(45deg, #fff, #ddd); } }
 
 @keyframes logo-hover {
