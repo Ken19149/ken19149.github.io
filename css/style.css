@@ -11,3 +11,12 @@ h1 {
 .typewrite {
     z-index: 2;
 }
+
+svg {
+    width: 0;
+    height: 0;
+}
+
+main {
+    z-index: -2;
+}
