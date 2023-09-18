@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loading-screen.css">
     <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/test.css">
     <title>Chavangkon Kanjanakuldit</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,9 +41,10 @@
           document.querySelector('.loading-screen').classList.add('fade-out');
         }, 1500);
     </script>
-
+    
     <!--Content Below-->
     <header id="nav-wrapper">
+      
         <nav id="nav">
           <div class="nav left">
             <span class="gradient skew"><h1 class="logo un-skew"><a href="#home">Ken</a></h1></span>
@@ -58,12 +60,34 @@
       </header>
       <main>
         <section id="home">
-            <br><br><br>><br>
+          <div class="lamp">
+            <div class="lava">
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 -20 10" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
+            <br><br><br><br>
             <h1>
                 <a class="typewrite" data-period="1500" data-type='[ "Hello<br><br>World", "Chavangkon<br><br>Kanjanakuldit", "Com-Sci<br><br>Student", "Alias: <br><br>Ken" ]'>
                 <span class="wrap"></span>
                 </a>
             </h1>
+            
             <!--
             <div class="stats">
             <img class="first-img" src="https://ghchart.rshah.org/Ken19149" alt="Ken19149's Github Contribution Chart" />
