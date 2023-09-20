@@ -10,3 +10,11 @@ svg {
     width: 0;
     height: 0;
 }
+
+.commit {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    width: 50%;
+    height: auto;
+}
