@@ -1,5 +1,5 @@
 h1 {
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .typewrite {
@@ -15,7 +15,7 @@ svg {
     position: absolute;
     bottom: 5%;
     left: 3%;
-    width: 50%;
+    width: 40%;
     height: auto;
     -webkit-user-drag: none;
 }
@@ -23,8 +23,10 @@ svg {
 .git-readme {
     margin-bottom: 3%;
     -webkit-user-drag: none;
+    width: 100%;
 }
 
 .git-commit {
     -webkit-user-drag: none;
+    width: 100%;
 }
