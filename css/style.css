@@ -11,10 +11,20 @@ svg {
     height: 0;
 }
 
-.commit {
+.stats {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 3%;
     width: 50%;
     height: auto;
+    -webkit-user-drag: none;
+}
+
+.git-readme {
+    margin-bottom: 3%;
+    -webkit-user-drag: none;
+}
+
+.git-commit {
+    -webkit-user-drag: none;
 }
