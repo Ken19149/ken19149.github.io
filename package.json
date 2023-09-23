@@ -12,6 +12,7 @@
     "three": "^0.156.1"
   },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview --port 8080"
   }
 }
