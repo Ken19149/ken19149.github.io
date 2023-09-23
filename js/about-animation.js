@@ -1,10 +1,10 @@
-import * as THREE from "./three/three.module.js";
-import { GLTFLoader } from "./three/GLTFLoader.js";
+//import * as THREE from "./three/three.module.js";
+//import { GLTFLoader } from "./three/GLTFLoader.js";
 
-//import * as THREE from "https://unpkg.com/three@0.156.1/build/three.module.js";
+import * as THREE from "https://unpkg.com/three@0.156.1/build/three.module.js";
 //import { GLTFLoader } from 'https://unpkg.com/three@0.156.1/examples/jsm/loaders/GLTFLoader.js';
 
-const loader = new GLTFLoader();
+//const loader = new GLTFLoader();
 
 const scene = new THREE.Scene();
 
